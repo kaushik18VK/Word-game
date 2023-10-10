@@ -39,21 +39,21 @@ function App() {
   }
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
     <Navbar title="Wordz Play" aboutText="About" mode={mode} toggleMode={toggleMode}/>
     <Alert alert= {alert}/>
     <br />
     <div className="container my-3">
-      <Routes>
+      {/* <Routes> */}
         {/* <About/> */}
-      <Route exact path="/about" element={<About mode={mode} />} />
-      </Routes>
-      <Routes>
-        {/* <TextForm showAlert={showAlert} heading="Try Wordz Play - Text Converter, Word counter, Character counter"mode={mode} /> */}
-        <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Try Wordz Play - Text Converter, Word counter, Character counter"mode={mode} />}></Route>
-    </Routes>
+      {/* <Route exact path="/about" element={<About mode={mode} />} /> */}
+      {/* </Routes> */}
+      {/* <Routes> */}
+        <TextForm showAlert={showAlert} heading="Try Wordz Play - Text Converter, Word counter, Character counter"mode={mode} />
+        {/* <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Try Wordz Play - Text Converter, Word counter, Character counter"mode={mode} />}></Route> */}
+    {/* </Routes> */}
     </div>
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
     </>
   );
 }
