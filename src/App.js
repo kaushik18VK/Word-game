@@ -1,11 +1,11 @@
 // import { useState } from 'react';
 import './App.css';
-import About from './component/About';
+// import About from './component/About';
 import Navbar from './component/Navbar';
 import TextForm from './component/txtForm';
 import React, { useState } from 'react';
 import Alert from './component/Alertt';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
 
