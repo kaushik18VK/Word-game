@@ -51,11 +51,11 @@ const HandleonChange=(event)=>{
   <textarea className="form-control" value={text} id="Mybox" rows="8" onChange={HandleonChange} style={{backgroundColor:props.mode==='dark'?'#13466e':'white',color:props.mode==='dark'?'white':'black'}} ></textarea>
 </div>
 <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleUpclick}>Convert to Uppercase</button>
-<button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleDoclick}>Convert to Lowercase</button>
-<button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleClearclick}>Cleartext</button>
-<button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handlerevlick}>Reverse words</button>
-<button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleCopy}>copy text</button>
-<button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={titleCase}>Title case</button>
+<button disabled={text.length===0} className="btn btn-secondary mx-1 my-1" onClick={handleDoclick}>Convert to Lowercase</button>
+<button disabled={text.length===0} className="btn btn-success mx-1 my-1" onClick={handleClearclick}>Cleartext</button>
+<button disabled={text.length===0} className="btn btn-warning mx-1 my-1" onClick={handlerevlick}>Reverse words</button>
+<button disabled={text.length===0} className="btn btn-danger mx-1 my-1" onClick={handleCopy}>copy text</button>
+<button disabled={text.length===0} className="btn btn-info mx-1 my-1" onClick={titleCase}>Title case</button>
 
 
     </div>
