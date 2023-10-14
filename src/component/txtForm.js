@@ -23,10 +23,8 @@ export default function TxtForm(props) {
       props.showAlert("Reveresed string!","success")
     }
     const handleCopy=()=>{
-      var text=document.getElementById("Mybox");
       text.select();
       navigator.clipboard.writeText(text.value);
-      document.getSelection().removeAllRanges();
       props.showAlert("Copied Text!","success")
     }
     const titleCase = () => {
@@ -61,7 +59,7 @@ const HandleonChange=(event)=>{
     </div>
     <div className="container my-3" style={{color:props.mode==='dark'?'white':'black'}}>
       <h2>Your summary is here</h2>
-      <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} and {text.length} </p>
+      <p>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} and {text.length} </p>
       <p>{0.008*text.split(" ").filter((element)=>{return element.length!==0}).length} Minutes to read</p>
       <h2>Preview</h2>
       <p>{text.length>0? text:"Nothing to preview!"} </p>
